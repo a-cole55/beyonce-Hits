@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BeeHive Collection</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!DOCTYPE html>
+    <!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title></title>
 </head>
-<body>
-    <h1>Current Rappers</h1>
-    <ul class="rappers">
+<body> -->
+    <h1>Beyoncé's Greatest Hits</h1>
+    <ul class="beyonceHits">
     <% for(let i=0; i < info.length; i++) {%>
         <li class="rapper">
             <span><%= info[i].stageName %></span>
@@ -31,11 +31,11 @@
     <% } %>
     </ul>
 
-    <h2>Add A Rapper:</h2>
+    <h2>Add Song:</h2>
 
     <form action="/addRapper" method="POST">
-        <input type="text" placeholder="Stage Name" name="stageName">
-        <input type="text" placeholder="Birth Name" name="birthName">
+        <input type="text" placeholder="Song Name" name="songName">
+        <input type="text" placeholder="Album Title" name="albumTitle">
         <input type="submit">
     </form>
     
